@@ -266,7 +266,7 @@ footer div {
 
 /************* Responsive design *************/
 
-@media only screen and (max-width: 786px) {
+@media only screen and (max-width: 790px) {
     html {
         font-size: 13px;
     }
