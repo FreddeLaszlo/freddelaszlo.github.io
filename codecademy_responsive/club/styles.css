@@ -1,0 +1,317 @@
+/************* Fonts *************/
+@font-face {
+    font-family: "Grey Qo";
+    src: url('./fonts/GreyQo-Regular.ttf');
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "EB Garamond";
+    src: url('./fonts/EBGaramond-MediumItalic.ttf');
+}
+
+
+/************* Reset *************/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: sans-serif;
+    scroll-padding-top: 5rem;
+}
+
+
+/************* Global settings *************/
+body {
+    background: url("./images/chess-background.jpg") fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: "Grey Qo", script;
+    font-size: 5rem;
+    text-shadow: 1px 1px lightgray;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+
+/************* Header *************/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    padding: 0 1.2rem;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    background-image: linear-gradient(to right, black, white);
+
+}
+
+nav {
+    display: flex;
+    gap: 1.6rem;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 1px 1px white;
+    text-decoration: none;
+    transition: color 0.2s, text-shadow 0.2s;
+    font-size: 1.4rem;
+}
+
+nav a:hover {
+    color: white;
+    text-shadow: 1px 1px black;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: "Grey Qo", script;
+    font-weight: normal;
+    font-size: 5rem;
+    color: white;
+
+}
+
+.logo img {
+    height: 4rem;
+}
+
+
+/************* Main **********************/
+
+.stripe_1 {
+    background-color: rgba(240, 255, 240, 0.7);
+}
+
+.stripe_2 {
+    background-color:rgba(255, 255, 255, 0.7);
+}
+
+main, footer{
+    position: relative;
+    top: 5rem;
+    width: 100%;
+}
+
+/************* Banner (quotes) **********/
+.quote {
+    width: 100%;
+    margin: 2rem 0;
+    text-align: center;
+    font-size:0.8rem;
+}
+
+q {
+    padding: 0.8rem;
+    color: black;
+    font-family: "EB Garamond", serif;
+    font-size: 1.8rem;
+
+}
+
+/************* Main - Photos *************/
+
+.photos {
+    margin: 1.2rem 0;
+    text-align: center;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.photos h1 {
+    margin: 1.67rem 0 1.11rem 0;
+}
+
+.pics {
+    width: 100%;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pics div{
+    width: 18.67rem;
+    background-color: white;
+    text-align: center;
+}
+
+.pics img {
+    width: 95%;
+    margin: 0.5rem;
+}
+
+.pics p {
+    padding-bottom: 1rem;
+}
+
+
+/************* Main - Events *************/
+.events {
+    padding: 0 2rem 2rem 2rem;
+    text-align: center;
+}
+
+.events p {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.events span {
+    font-family: "Grey Qo", script;
+    font-style: normal;
+    font-size: 2.5rem;
+}
+
+
+/************* Main - Prizes *************/
+.prizes {
+    margin: 1.2rem 0;
+    text-align: center;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.prizes p {
+    padding: 0.5rem;
+}
+
+/************* Footer *************/
+
+.twitter{
+    display: inline-block;
+    width: 1.8rem;
+    height: 1.8rem;
+    content: "";
+    background-color: currentColor;
+    -webkit-mask: url('data:image/svg+xml;utf8,<svg viewBox="0 -8 26 30" xmlns="http://www.w3.org/2000/svg"><g><path fill="white" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g></svg>') no-repeat center;
+    mask: url('data:image/svg+xml;utf8,<svg viewBox="0 -8 26 30" xmlns="http://www.w3.org/2000/svg"><g><path fill="white" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g></svg>') no-repeat center;
+    background-position: center 3px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: honeydew;
+    height: 3rem;
+    justify-content: space-between;
+    padding: 0 1.1rem;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.fa {
+    padding: 0.56rem;
+    font-size: 1.11rem !important;
+    width: 2.22rem;
+    text-align: center;
+    text-decoration: none;
+    transition: border-radius 0.3s;
+    border-radius: 10%;
+}
+
+.fa:hover {
+    box-shadow: 1px 0 black, -1px 0 black, 0 1px black, 0 -1px black;
+    border-radius: 50%;
+    transition: border-radius 0.3s;
+
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-envelope {
+    background-color: seagreen;
+    color: white;
+}
+
+footer div {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+
+/************* Responsive design *************/
+
+@media only screen and (max-width: 786px) {
+    html {
+        font-size: 13px;
+    }
+
+    .pics div{
+        width: 90%;
+        background-color: white;
+        text-align: center;
+    }
+
+    .pics img {
+        width: 98%;
+    }
+}
+
+@media only screen and (max-width: 555px) {
+    html {
+        font-size: 12px;
+    }
+
+    .pics div{
+        width: 90%;
+    }
+
+    .pics img {
+        width: 98%;
+    }
+
+    header {
+        height: 10rem;
+        flex-direction: column;
+        background-image: linear-gradient(to bottom, black, white);
+    }
+    
+    nav {
+        padding-bottom: 1rem;
+    }
+
+    main, footer{
+        top: 10rem;
+    }
+
+    * {
+        scroll-padding-top: 10rem;
+    }
+
+
+}
